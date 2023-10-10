@@ -601,15 +601,14 @@ font-size: 14px;
   font-weight: 600;
   color: var(--second-color);
 }
-#footer .ftr-1 p{
+#footer .ftr-1 a{
   text-decoration: none;
   font-weight: 500;
   color: white;
   cursor: pointer;
 }
-#footer .ftr-2 p{
-  color: white;
-  font-weight: 500;
+#footer .ftr-1 a:hover{
+  color: var(--second-color);
 }
 #footer .ftr-2 p i{
   margin-right: 10px;
