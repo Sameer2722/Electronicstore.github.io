@@ -21,8 +21,8 @@ img {
   --third-color: #ebe0e0;
 }
 
-/*----------- first Nav starts -----------*/
 
+/*----------- first Nav starts -----------*/
 .top-navbar {
   display: flex;
   justify-content: space-between;
@@ -106,6 +106,7 @@ img {
 }
 /* ------ first Nav end -------- */
 
+
 /* ------ Second Nav starts  ------ */
 #header {
   background-color: var(--first-color);
@@ -116,7 +117,6 @@ img {
 }
 .container span {
   color: var(--second-color);
-  /* color: #fecd51; */
 }
 .navbar .container a {
   color: white !important;
@@ -153,6 +153,7 @@ img {
   color: var(--second-color);
 }
 
+/* --------- Media Querry --------- */
 @media screen and (max-width: 400px) {
   .header .container .navbar-brand {
     font-size: 22px;
@@ -167,6 +168,7 @@ img {
   }
 }
 /*--------- second Nav End --------- */
+
 
 /*-------- Home Section starts -------- */
 .home {
@@ -207,6 +209,7 @@ img {
   color: var(--first-color);
 }
 
+/*---------- Media Querry ----------*/
 @media (max-width: 768px) {
   .container .row .col-md-6 h1 {
     font-weight: 500;
@@ -245,6 +248,7 @@ img {
     font-size: 23px;
   }
 }
+
 @media (max-width: 300px) {
   .container .row .col-md-6 h1 {
     font-weight: 500;
@@ -265,6 +269,7 @@ img {
   }
 }
 /*-------- Home Section Ends -------- */
+
 
 /* --------- Products Section Start ----------*/
 .container .heading h2 span {
@@ -349,6 +354,7 @@ img {
 }
 /* --------- Products Section End -----------*/
 
+
 /* ---- Deals Section Start ---------*/
 
 .deals .container .row .deals-card {
@@ -425,6 +431,7 @@ img {
 }
 /* ---- Deals Section end -------- */
 
+
 /*--------- Carousel Section Start ----------*/
 .owl-carousel .item .card-body h4 {
   font-size: 16px;
@@ -436,20 +443,21 @@ img {
 }
 /*--------- Carousel Section End ----------*/
 
-/* ---------- Big Billion Sales Start --------- */
 
+/* ---------- Big Billion Sales Start --------- */
 .bb-sales {
   width: 100%;
   background-color: var(--third-color);
 }
 /* ---------- Big Billion Sales End --------- */
 
+
 /* -------  service Start ------- */
 .service .container .row i {
   font-size: 25px;
 }
-
 /* -------  service Ends ------- */
+
 
 /* ---------- About Section Start ----------- */
 
@@ -486,8 +494,8 @@ img {
 }
 /* ---------- About Section End ------------- */
 
-/*------------- Newslater Start --------*/
 
+/*------------- Newslater Start ----------*/
 #contact h3 {
   font-size: 25px;
   letter-spacing: 3px;
@@ -521,7 +529,7 @@ img {
   background-color: var(--first-color);
 }
 
-/* ----- Media Querry */
+/* ------- Media Querry --------*/
 
 @media (max-width: 600px) {
   #contact h3 {
@@ -676,15 +684,17 @@ img {
 }
 /* ---------- Footer End ---------- */
 
+
 /*========= Login And Signup Form ========= */
+.back-to-home a{
+  font-weight: 600;
+}
 .login-box {
   padding: 50px;
 }
-
 .login-form .login-box .heading h2 {
   font-weight: 600;
 }
-
 .login-form .login-box .heading h2 span {
   color: var(--second-color);
 }
@@ -701,6 +711,17 @@ img {
 .login-form .input-form label {
   font-weight: 600;
 }
+.login-form .login-box .input-form p{
+  font-size: 13px;
+}
+.login-form .login-box .input-form p a{
+  color: var(--first-color);
+  text-decoration: none;
+}
+.login-form .login-box .input-form p a:hover{
+  text-decoration: underline;
+  color: var(--second-color);
+}
 .login-form .input-form .btn {
   background-color: var(--second-color);
 }
@@ -714,6 +735,32 @@ img {
   font-size: 16px;
   border-radius: 10px;
 }
+.login-form .login-box .form-btn:hover{
+  background-color: var(--second-color);
+  border: 1px solid var(--first-color);
+}
+.login-form .login-box .form-link{
+  font-weight: 400;
+  font-size: 15px;
+  text-decoration: underline;
+  color: var(--first-color);
+  margin-left: 20px;
+}
+.login-form .login-box .form-link:hover{
+  color: var(--second-color);
+}
+.login-form .login-box .already a{
+margin-left: 12px;
+font-size: 15px;
+text-decoration: underline;
+color: var(--first-color);
+font-weight: 400;
+}
+.login-form .login-box .already a:hover{
+  color: var(--second-color);
+}
+
+/*-------- Media Querry ---------*/
 
 @media (max-width: 450px) {
   .login-form .input-form input {
@@ -726,6 +773,36 @@ img {
   .input-form .form-text {
     font-size: 11px;
   }
+}
+
+@media (max-width: 350px){
+  .login-form .login-box .form-btn {
+    padding: 2px;
+    height: 27px;
+    width: 80px;
+    font-size: 14px;
+  }
+  .login-form .login-box .form-link{
+    font-size: 12px;
+    margin-left: 12px;
+  }
+  .login-form .login-box .already p{
+    font-size: 14px;
+  }
+  .login-form .login-box .already a{
+    margin-left: 10px;
+    font-size: 15px;
+    }
+}
+
+@media (max-width: 300px){
+  .login-form .login-box .already p{
+    font-size: 12px;
+  }
+  .login-form .login-box .already a{
+    margin-left: 8px;
+    font-size: 13px;
+    }
 }
 
 /*======= Back to Up Btn ========*/
